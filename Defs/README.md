@@ -11,17 +11,20 @@ The standard structure of one of these XML files is as follows:
 		Set "Abstract" to "True" if a thing of this type cannot be created.
 	-->
 	<Def Name="ExampleParentDefName" Abstract="True">
+		<!-- (...) -->
 	</Def>
 
 	<!-- ParentName defines the Name of the parent definition. -->
 	<Def Name="ExampleChildDefName" ParentName="ExampleParentDefName">
+		<!-- (...) -->
 	</Def>
 
 	<!-- Most definitions will use a subclass of "Def" instead (i.e. "ThingDef"). -->
 	<ThingDef Name="ExampleThingDefName">
+		<!-- (...) -->
 	</ThingDef>
 
-	<!-- ... -->
+	<!-- (...) -->
 </Defs>
 ```
 

@@ -19,6 +19,11 @@ The standard structure of one of these XML files is as follows:
 		<!-- (...) -->
 	</Def>
 
+	<!-- If you don't want to inherit values from the parent, set "Inherit" to "False". -->
+	<Def Name="ExampleChildDefNoInheritName" ParentName="ExampleParentDefName" Inherit="False">
+		<!-- (...) -->
+	</Def>
+
 	<!-- Most definitions will use a subclass of "Def" instead (i.e. "ThingDef"). -->
 	<ThingDef Name="ExampleThingDefName">
 		<!-- (...) -->

@@ -1,0 +1,86 @@
+<!-- This file is used to provide RimWorld with basic information about the mod. -->
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<!-- The name of the mod. -->
+	<name>Mod Template</name>
+
+	<!-- The name(s) of the author(s) of the mod. -->
+	<author>Lakuna</author>
+
+	<!-- A URL for the mod. -->
+	<url>https://lakuna.pw</url>
+
+	<!-- A unique string to identify the mod by. Typically follows the form "AuthorName.ModSeries.ModName". -->
+	<packageId>Lakuna.ModTemplate</packageId>
+
+	<!-- A list of RimWorld versions that the mod works with. -->
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>
+		<li>1.3</li>
+	</supportedVersions>
+
+	<!-- A description of the mod. -->
+	<description>A template for creating RimWorld mods with Harmony.</description>
+
+	<!-- A list of mods which the mod requires to function, separated by game version. -->
+	<modDependenciesByVersion>
+		<v1.1>
+			<li>
+				<!-- The package ID declared in the mod's About.xml file. -->
+				<packageId>brrainz.harmony</packageId>
+
+				<!-- A display name for the mod. -->
+				<displayName>Harmony</displayName>
+
+				<!-- The link to download the mod from on the Steam Workshop. -->
+				<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+
+				<!-- The link to download the mod from off of the Steam Workshop. -->
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			</li>
+		</v1.1>
+		<v1.2>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			</li>
+		</v1.2>
+		<v1.3>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			</li>
+		</v1.3>
+	</modDependenciesByVersion>
+
+	<!-- If the dependencies are the same for every version, use the following form instead. -->
+	<!--
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	-->
+
+	<!-- Package IDs of mods which should be loaded after the mod. -->
+	<!-- <loadBefore/> -->
+
+	<!-- Package IDs of mods which should be loaded before the mod. -->
+	<loadAfter>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+
+	<!-- Package IDs of mods which are incompatible with the mod. -->
+	<!-- <incompatibleWith/> -->
+</ModMetaData>

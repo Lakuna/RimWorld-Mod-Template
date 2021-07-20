@@ -51,5 +51,6 @@ Some mod files should not be kept in releases. The following files and directori
 - .git
 - .github
 - .gitignore
-- Assemblies/0Harmony.dll (for RimWorld versions 1.1+).
+- Assemblies/0Harmony.dll (for RimWorld versions 1.1+)
 - Source
+- README.md (optional)

@@ -44,3 +44,12 @@ To gain finer control over how mod files are loaded, you can make a file called 
 When using the format above, the *last* folder in the list takes precedence.
 
 RimWorld 1.0 does not support the load folder system, but it does support loading Defs, Patches, and Assemblies from a folder named "1.0". It will always look for Textures, Translations, and Sounds in the mod's root directory. If you define a folder named "1.0", RimWorld version 1.0 will not look for Defs, Patches, and Assemblies in the root directory.
+
+# Release Contents
+
+Some mod files should not be kept in releases. The following files and directories should be removed before uploading a release to Steam, GitHub, or anywhere else:
+- .git
+- .github
+- .gitignore
+- Assemblies/0Harmony.dll (for RimWorld versions 1.1+).
+- Source

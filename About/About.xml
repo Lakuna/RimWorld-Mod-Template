@@ -1,6 +1,6 @@
-<!-- This file is used to provide RimWorld with basic information about the mod. -->
-
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file is used to provide RimWorld with basic information about the mod. -->
 
 <ModMetaData>
 	<!-- The name of the mod. -->

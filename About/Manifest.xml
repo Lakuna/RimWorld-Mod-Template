@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
 <!--
 	This file is used to provide additional information about the mod.
 	The format was originally used by Fluffy's ModManager.
 	Documentation: https://github.com/fluffy-mods/ModManager/blob/master/ForModders.md
 -->
-
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 
 <Manifest>
 	<!-- An identifier for the mod. Typically follows the form "ModName". -->

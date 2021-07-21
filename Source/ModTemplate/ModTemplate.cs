@@ -20,7 +20,7 @@ namespace ModTemplate {
 		public override void DoSettingsWindowContents(Rect rect) {
 			Listing_Standard listingStandard = new Listing_Standard();
 			listingStandard.Begin(rect);
-			_ = listingStandard.Label("Example setting");
+			listingStandard.Label("Example setting");
 			this.settings.exampleSetting = listingStandard.Slider(this.settings.exampleSetting, 0, 100);
 			listingStandard.End();
 

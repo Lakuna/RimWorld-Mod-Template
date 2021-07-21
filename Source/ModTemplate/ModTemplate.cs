@@ -8,6 +8,8 @@ namespace ModTemplate {
 		public Settings settings;
 
 		public ModTemplate(ModContentPack content) : base(content) {
+			Log.Message("Mod Template loaded.");
+
 			if (ModTemplate.Instance == null) {
 				ModTemplate.Instance = this;
 			}
@@ -24,5 +26,7 @@ namespace ModTemplate {
 
 			base.DoSettingsWindowContents(rect);
 		}
+
+		public override string SettingsCategory() => "Mod Template";
 	}
 }

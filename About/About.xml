@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <!-- This file is used to provide RimWorld with basic information about the mod. -->
 
@@ -10,15 +10,13 @@
 	<author>Lakuna</author>
 
 	<!-- A URL for the mod. -->
-	<url>https://lakuna.pw</url>
+	<url>https://github.com/Lakuna/RimWorld-Mod-Template</url>
 
-	<!-- A unique string to identify the mod by. Typically follows the form "AuthorName.ModSeries.ModName". -->
+	<!-- A unique string to identify the mod by. Typically uses the form "AuthorName.ModSeries.ModName". -->
 	<packageId>Lakuna.ModTemplate</packageId>
 
 	<!-- A list of RimWorld versions that the mod works with. -->
 	<supportedVersions>
-		<li>1.1</li>
-		<li>1.2</li>
 		<li>1.3</li>
 	</supportedVersions>
 
@@ -26,7 +24,7 @@
 	<!-- <targetVersion/> -->
 
 	<!-- A description of the mod. -->
-	<description>A template for creating RimWorld mods with Harmony.</description>
+	<description>A template for creating RimWorld mods.</description>
 
 	<!-- A list of mods which the mod requires to function. -->
 	<modDependencies>

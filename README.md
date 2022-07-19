@@ -1,25 +1,29 @@
 # RimWorld-Mod-Template
-A template for creating RimWorld mods with Harmony.
+
+A template for creating RimWorld mods.
 
 ## Multi-version mods
+
 Starting from a mod's root directory, RimWorld checks a sequence of subfolders in order and loads files from all of them:
-- (...) (skipped if any folder above was found)
-- /1.3 (skipped if any folder above was found)
-- /1.2 (skipped if any folder above was found)
-- /1.1 (skipped if any folder above was found)
-- /1.0 (skipped if any folder above was found)
-- /Common (always checked)
-- / (always checked)
+
+- `/1.3` (skipped if any folder above was found)
+- `/1.2` (skipped if any folder above was found)
+- `/1.1` (skipped if any folder above was found)
+- `/1.0` (skipped if any folder above was found)
+- `/Common` (always checked)
+- `/` (always checked)
 
 If the same file is present in several of these folders, the first one checked will take precedence and the others will be ignored.
 
-The About folder should always be in the mod's root directory.
+The `About` folder should always be in the mod's root directory.
 
-When sharing files between versions, the Common folder should be used.
+When sharing files between versions, the `Common` folder should be used.
 
-To gain finer control over how mod files are loaded, you can make a file called "LoadFolders.xml" in the mod's root directory. For example:
+To gain finer control over how mod files are loaded, you can make a file called "LoadFolders.xml" in the mod's root directory.
+For example:
+
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <loadFolders>
 	<v1.1>
@@ -35,7 +39,7 @@ To gain finer control over how mod files are loaded, you can make a file called 
 	<v1.3>
 		<li>Common</li>
 		<li>1.3</li>
-		<li IfModActive="Ludeon.RimWorld.Ideology, Ludeon.RimWorld.Royalty">AnyExpansions</li>
+		<li IfModActive="Ludeon.RimWorld.Ideology,Ludeon.RimWorld.Royalty">AnyExpansions</li>
 		<li IfModNotActive="Ludeon.RimWorld.Ideology">NoIdeology</li>
 	</v1.3>
 </loadFolders>
@@ -43,14 +47,19 @@ To gain finer control over how mod files are loaded, you can make a file called 
 
 When using the format above, the *last* folder in the list takes precedence.
 
-RimWorld 1.0 does not support the load folder system, but it does support loading Defs, Patches, and Assemblies from a folder named "1.0". It will always look for Textures, Translations, and Sounds in the mod's root directory. If you define a folder named "1.0", RimWorld version 1.0 will not look for Defs, Patches, and Assemblies in the root directory.
+RimWorld version 1.0 does not support the load folder system, but it does support loading `Defs`, `Patches`, and `Assemblies` from `/1.0`.
+It will always look for `Textures`, `Translations`, and `Sounds` in the mod's root directory.
+If you create `/1.0`, RimWorld version 1.0 will not look for `Defs`, `Patches`, and `Assemblies` in the root directory.
 
 ## Release Contents
 
-Some mod files should not be kept in releases. The following files and directories should be removed before uploading a release to Steam, GitHub, or anywhere else:
-- .git
-- .github
-- .gitignore
-- Assemblies/0Harmony.dll (for RimWorld versions 1.1+)
-- Source
-- README.md (optional)
+Some mod files should not be kept in releases.
+The following files and directories should be removed before uploading a release to Steam, GitHub, or anywhere else:
+
+- `.git`
+- `.github`
+- `.gitignore`
+- `Source`
+- `README.md` (removal optional)
+
+Note that if your mod uses [Harmony](https://github.com/pardeike/Harmony), `0Harmony.dll` should be removed from the assemblies for every RimWorld version at and above version 1.1.

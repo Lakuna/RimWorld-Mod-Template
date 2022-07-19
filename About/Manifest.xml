@@ -1,22 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 
 <!--
-	This file is used to provide additional information about the mod.
-	The format was originally used by Fluffy's ModManager.
-	Documentation: https://github.com/fluffy-mods/ModManager/blob/master/ForModders.md
+This file is used to provide additional information about the mod.
+The format was originally used by Fluffy's ModManager.
+Documentation: https://github.com/fluffy-mods/ModManager/blob/master/ForModders.md
 -->
 
 <Manifest>
-	<!-- An identifier for the mod. Typically follows the form "ModName". -->
+	<!--
+	An identifier for the mod.
+  Typically follows the form "ModName".
+  -->
 	<identifier>ModTemplate</identifier>
 
-	<!-- The version of the mod. Follows the form "major.minor.build.revision". Must have 2-4 elements. -->
-	<version>1.1.0.0</version>
+	<!--
+  The version of the mod.
+  Follows the form "major.minor.build.revision".
+  Must have 2-4 elements.
+  -->
+	<version>1.0.0.0</version>
 
 	<!-- A list of identifiers of mods which the mod requires to function. -->
-	<dependencies>
-		<li>Harmony</li>
-	</dependencies>
+	<!-- <dependencies/> -->
 
 	<!-- Identifiers of mods which are incompatible with the mod. -->
 	<!-- <incompatibleWith/> -->
@@ -25,9 +30,7 @@
 	<!-- <loadBefore/> -->
 
 	<!-- Identifiers of mods which should be loaded before the mod. -->
-	<loadAfter>
-		<li>Harmony</li>
-	</loadAfter>
+	<!-- <loadAfter/> -->
 
 	<!-- Identifiers of mods which are recommended to the user when using ModManager. -->
 	<!-- <suggests/> -->

@@ -72,6 +72,7 @@ For XML documentation, `RimWorld/Data` and `RimWorld/Source` will contain a vari
 For C# documentation, the relevant code can be decompiled (such as with [ILSpy](https://github.com/icsharpcode/ILSpy)) from `RimWorld/RimWorld*_Data/Managed` (especially `Assembly-CSharp.dll` and `UnityEngine.CoreModule.dll`).
 It is a good idea to find a mod which does something similar to what you're attempting to do and look at the code for that mod.
 There is a modding tutorial available on the [RimWorld Wiki](https://rimworldwiki.com/wiki/Modding).
+A list of tutorials and resources is available on [spdskatr's website](https://spdskatr.github.io/RWModdingResources/).
 If you can't find something, ask for help on the [Ludeon Forums](https://ludeon.com/forums/).
 
 ## Harmony

@@ -2,7 +2,7 @@
 
 This folder contains XML files with definitions for each thing added by the mod.
 
-## File contents
+## File Contents
 
 The standard structure of one of these XML files is as follows:
 
@@ -28,7 +28,7 @@ The standard structure of one of these XML files is as follows:
 </Defs>
 ```
 
-## File structure
+## File Structure
 
 There is no clear naming convention for the contents of the `Defs` folder, but it is advisable that you follow RimWorld's structure as closely as possible.
 You could include all of your definitions in one file if you wanted to, but it would make it more difficult for others to find definitions.

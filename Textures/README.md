@@ -2,7 +2,7 @@
 
 This folder contains image files supplied by the mod.
 
-## File structure
+## File Structure
 
 There is no well-defined file structure for this folder, but in some cases files must be named in a specific format.
 

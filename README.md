@@ -1,8 +1,8 @@
-# RimWorld mod template
+# RimWorld Mod Template
 
 A template for creating RimWorld mods.
 
-## File structure overview
+## File Structure Overview
 
 RimWorld mods are folders which contain subfolders and files with specific names.
 
@@ -14,10 +14,11 @@ RimWorld mods are folders which contain subfolders and files with specific names
 - `/Sounds` contains audio files supplied by the mod.
 - `/Textures` contains image files supplied by the mod.
 
-## Multi-version mods
+## Multi-Version Mods
 
 Starting from a mod's root directory, RimWorld checks a sequence of subfolders in order and loads files from all of them:
 
+- `/1.4` (skipped if any folder above was found)
 - `/1.3` (skipped if any folder above was found)
 - `/1.2` (skipped if any folder above was found)
 - `/1.1` (skipped if any folder above was found)

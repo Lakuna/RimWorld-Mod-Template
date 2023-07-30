@@ -2,7 +2,7 @@
 
 This folder contains translation data for the mod.
 
-## File contents
+## File Contents
 
 ### Keyed
 
@@ -38,7 +38,7 @@ For example (from RimWorld 1.3):
 
 Text files in the `Strings` directory can contain lists with a word on every line, which can then be used in XML to randomly get words from a bank.
 
-## File structure
+## File Structure
 
 The contents of the `Languages` folder should match the structure below, with subfolders having no specific naming convention:
 

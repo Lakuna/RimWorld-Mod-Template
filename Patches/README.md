@@ -3,7 +3,7 @@
 This folder contains XML files with modifications to the definitions of things added by other mods.
 These XML `PatchOperation`s are available for versions of RimWorld from Alpha 17 onward.
 
-## File contents
+## File Contents
 
 An example XML `PatchOperation` is below:
 

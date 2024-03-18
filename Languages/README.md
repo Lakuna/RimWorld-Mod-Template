@@ -6,8 +6,7 @@ This folder contains translation data for the mod.
 
 ### Keyed
 
-XML files in the `Keyed` directory contain keys that can be referred to in C#.
-For example:
+XML files in the `Keyed` directory contain keys that can be referred to in C#. For example:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -23,8 +22,7 @@ For example:
 
 ### DefInjected
 
-XML files in the `DefInjected` directory contain translations for XML definitions.
-For example (from RimWorld 1.3):
+XML files in the `DefInjected` directory contain translations for XML definitions. For example (from RimWorld 1.3):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -51,24 +49,24 @@ The contents of the `Languages` folder should match the structure below, with su
 Here is an example Languages folder structure (from RimWorld 1.3):
 
 - `Languages`
-	- `DefInjected`
-		- `ConceptDef`
-			- `Example_Concepts.xml`
-		- `TraitDef`
-			- `Example_Traits.xml`
-	- `Keyed`
-		- `Alerts.xml`
-		- `Credits.xml`
-		- `Dates.xml`
-	- `Strings`
-		- `Names`
-			- `Animal_Female.txt`
-			- `Animal_Male.txt`
-			- `Animal_Unisex.txt`
-		- `WordParts`
-			- `CapitalLetters.txt`
-			- `PlaceEndings.txt`
-			- `Syllables_Byzantinian.txt`
-	- `About.txt`
-	- `LangIcon.png`
-	- `LanguageInfo.xml`
+  - `DefInjected`
+    - `ConceptDef`
+      - `Example_Concepts.xml`
+    - `TraitDef`
+      - `Example_Traits.xml`
+  - `Keyed`
+    - `Alerts.xml`
+    - `Credits.xml`
+    - `Dates.xml`
+  - `Strings`
+    - `Names`
+      - `Animal_Female.txt`
+      - `Animal_Male.txt`
+      - `Animal_Unisex.txt`
+    - `WordParts`
+      - `CapitalLetters.txt`
+      - `PlaceEndings.txt`
+      - `Syllables_Byzantinian.txt`
+  - `About.txt`
+  - `LangIcon.png`
+  - `LanguageInfo.xml`

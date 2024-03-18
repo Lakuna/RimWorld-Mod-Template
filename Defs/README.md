@@ -30,23 +30,22 @@ The standard structure of one of these XML files is as follows:
 
 ## File Structure
 
-There is no clear naming convention for the contents of the `Defs` folder, but it is advisable that you follow RimWorld's structure as closely as possible.
-You could include all of your definitions in one file if you wanted to, but it would make it more difficult for others to find definitions.
+There is no clear naming convention for the contents of the `Defs` folder, but it is advisable that you follow RimWorld's structure as closely as possible. You could include all of your definitions in one file if you wanted to, but it would make it more difficult for others to find definitions.
 
 ### Example
 
 Here is an example Defs folder structure (from RimWorld 1.3):
 
 - `Defs`
-	- `ThingDefs_Buildings`
-		- `Buildings_Ancient.xml`
-		- `Buildings_Art.xml`
-		- `Buildings_Base.xml`
-	- `ThingDefs_Items`
-		- `Items_Artifacts.xml`
-		- `Items_Exotic.xml`
-		- `Items_Food.xml`
-	- `ThoughtDefs`
-		- `Thoughts_Anesthetic.xml`
-		- `Thoughts_Memory_Death.xml`
-		- `Thoughts_Memory_Debug.xml`
+  - `ThingDefs_Buildings`
+    - `Buildings_Ancient.xml`
+    - `Buildings_Art.xml`
+    - `Buildings_Base.xml`
+  - `ThingDefs_Items`
+    - `Items_Artifacts.xml`
+    - `Items_Exotic.xml`
+    - `Items_Food.xml`
+  - `ThoughtDefs`
+    - `Thoughts_Anesthetic.xml`
+    - `Thoughts_Memory_Death.xml`
+    - `Thoughts_Memory_Debug.xml`

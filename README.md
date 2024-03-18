@@ -70,6 +70,6 @@ RimWorld is not well-documented. When RimWorld is downloaded through Steam on Wi
 
 If your mod uses [Harmony](https://github.com/pardeike/Harmony):
 
-- RimWorld versions 1.0 and below require Harmony versions less than 2 (the recommended version is 1.3.0.1). For these versions, `0Harmony.dll` must be included in `Assemblies`.
-- RimWorld versions 1.1 and above should instead depend on the Harmony mod. `0Harmony.dll` should not be included in `Assemblies`.
-  - The recommended Harmony version is 2.2.2 for RimWorld versions 1.1 through 1.4 and 2.3.1.1 for RimWorld versions 1.5 and above.
+- RimWorld versions 1.1 and below require Harmony versions less than 2 (the recommended version is 1.3.0.1). For these versions, `0Harmony.dll` must be included in `Assemblies`.
+- RimWorld versions 1.2 and above should instead depend on the Harmony mod. `0Harmony.dll` should not be included in `Assemblies`.
+  - The recommended Harmony version is 2.2.2 for RimWorld versions 1.2 through 1.4 and 2.3.1.1 for RimWorld versions 1.5 and above.

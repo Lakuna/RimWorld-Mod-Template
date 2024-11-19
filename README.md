@@ -70,13 +70,13 @@ RimWorld is not well-documented. When RimWorld is downloaded through Steam on Wi
 
 The following table lists the recommended [Harmony](https://github.com/pardeike/Harmony) version for each version of RimWorld. The column titled "Include Harmony" includes a value of "Yes" for versions of RimWorld that should include `0Harmony.dll` in their `Assemblies` folder, or "No" for versions of RimWorld that should depend on [the Harmony mod](https://github.com/pardeike/HarmonyRimWorld) instead.
 
-| RimWorld | Harmony   | .NET Framework | Include Harmony |
-| -------- | --------- | -------------- | --------------- |
-| 1.0      | 1.3.0.1   | 3.5            | Yes             |
-| 1.1      | 1.3.0.1\* | 4.7.2          | Yes             |
-| 1.2      | 2.2.2     | 4.7.2          | No              |
-| 1.3      | 2.2.2     | 4.7.2          | No              |
-| 1.4      | 2.2.2     | 4.7.2          | No              |
-| 1.5      | 2.3.1.1   | 4.7.2          | No              |
+| RimWorld | Harmony     | .NET Framework | Include Harmony |
+| -------- | ----------- | -------------- | --------------- |
+| 1.0      | 1.3.0.1     | 3.5            | Yes             |
+| 1.1      | 1.3.0.1[^1] | 4.7.2          | Yes             |
+| 1.2      | 2.2.2       | 4.7.2          | No              |
+| 1.3      | 2.2.2       | 4.7.2          | No              |
+| 1.4      | 2.2.2       | 4.7.2          | No              |
+| 1.5      | 2.3.1.1     | 4.7.2          | No              |
 
-\*There is conflicting information about which version of Harmony should be used with RimWorld version 1.1. [According to Harmony's developer](https://github.com/pardeike/HarmonyRimWorld/issues/39), you should use version 1.3.0.1, but it was standard practice at the time of its release to use version 2.x.
+[^1]: There is conflicting information about which version of Harmony should be used with RimWorld version 1.1. [According to Harmony's developer](https://github.com/pardeike/HarmonyRimWorld/issues/39), you should use version 1.3.0.1, but it was standard practice at the time of its release to use version 2.x.

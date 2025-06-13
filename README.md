@@ -18,6 +18,7 @@ RimWorld mods are folders which contain subfolders and files with specific names
 
 Starting from a mod's root directory, RimWorld checks a sequence of subfolders in order and loads files from all of them:
 
+- `/1.6` (skipped if any folder above was found)
 - `/1.5` (skipped if any folder above was found)
 - `/1.4` (skipped if any folder above was found)
 - `/1.3` (skipped if any folder above was found)
@@ -78,5 +79,6 @@ The following table lists the recommended [Harmony](https://github.com/pardeike/
 | 1.3      | 2.2.2       | 4.7.2          | No              |
 | 1.4      | 2.2.2       | 4.7.2          | No              |
 | 1.5      | 2.3.1.1     | 4.7.2          | No              |
+| 1.6      | 2.3.6       | 4.7.2          | No              |
 
 [^1]: There is conflicting information about which version of Harmony should be used with RimWorld version 1.1. [According to Harmony's developer](https://github.com/pardeike/HarmonyRimWorld/issues/39), you should use version 1.3.0.1, but it was standard practice at the time of its release to use version 2.x.

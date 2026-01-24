@@ -74,7 +74,7 @@ The following table lists the recommended [Harmony](https://github.com/pardeike/
 | RimWorld | Harmony     | .NET Framework | Include Harmony |
 | -------- | ----------- | -------------- | --------------- |
 | 1.0      | 1.2.0.1     | 3.5            | Yes             |
-| 1.1      | 1.2.0.1[^1] | 4.7.2          | Yes             |
+| 1.1      | 2.2.0.0[^1] | 4.7.2          | Yes             |
 | 1.2      | 2.2.2.0     | 4.7.2          | No              |
 | 1.3      | 2.2.2.0     | 4.7.2          | No              |
 | 1.4      | 2.2.2.0     | 4.7.2          | No              |

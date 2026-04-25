@@ -70,3 +70,27 @@ Here is an example Languages folder structure (from RimWorld 1.3):
   - `About.txt`
   - `LangIcon.png`
   - `LanguageInfo.xml`
+
+## Translation Arguments
+
+To use a keyed translation in C#, use `Verse.Translator.Translate`. This is an extension method on strings. The string will be used as the translation key, and the arguments to `Translate` will be used in the translation according to the translated string.
+
+Keyed strings can take arguments by using zero-indexed integers in curly braces like so:
+
+```xml
+<UpgradeImplant>Upgrade {0} to level {1}</UpgradeImplant>
+```
+
+In cases where objects are passed as arguments, certain properties of the object can be inserted according to the logic in `Verse.GrammarResolverSimple.TryResolveSymbol`.
+
+```xml
+<MeleeAttackToDeath>Melee attack {1_labelShort} to death</MeleeAttackToDeath>
+```
+
+In other cases, arguments can be identified by a label rather than by an index.
+
+```xml
+<NoMedicineMatchingCategory>No medicine for restriction '{CATEGORY}'.</NoMedicineMatchingCategory>
+```
+
+In this case, the argument can be labeled with `Verse.NamedArgumentUtility.Named`, which is an extension method on objects.

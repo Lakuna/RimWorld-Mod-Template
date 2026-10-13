@@ -4,7 +4,7 @@ A template for creating RimWorld mods.
 
 ## File Structure Overview
 
-RimWorld mods are folders which contain subfolders and files with specific names.
+RimWorld mods are folders that contain subfolders and files with specific names.
 
 - `/About` contains meta information about the mod.
 - `/Assemblies` contains C# assemblies for the mod.
@@ -18,6 +18,7 @@ RimWorld mods are folders which contain subfolders and files with specific names
 
 Starting from a mod's root directory, RimWorld checks a sequence of subfolders in order and loads files from all of them:
 
+- `/1.7` (skipped if any folder above was found)
 - `/1.6` (skipped if any folder above was found)
 - `/1.5` (skipped if any folder above was found)
 - `/1.4` (skipped if any folder above was found)
@@ -65,21 +66,32 @@ RimWorld version 1.0 does not support the load folder system, but it does suppor
 
 ## Documentation
 
-RimWorld is not well-documented. When RimWorld is downloaded through Steam on Windows, the default directory of the `RimWorld` folder is `C:\Program Files (x86)\Steam\steamapps\common\RimWorld`. For XML documentation, `RimWorld/Data` and `RimWorld/Source` will contain a variety of examples from the base game. For C# documentation, the relevant code can be decompiled (such as with [ILSpy](https://github.com/icsharpcode/ILSpy)) from `RimWorld/RimWorld*_Data/Managed` (especially `Assembly-CSharp.dll` and `UnityEngine.CoreModule.dll`). It is a good idea to find a mod which does something similar to what you're attempting to do and look at the code for that mod. There is a modding tutorial available on the [RimWorld Wiki](https://rimworldwiki.com/wiki/Modding). A list of tutorials and resources is available on [spdskatr's website](https://spdskatr.github.io/RWModdingResources/). If you can't find something, ask for help on the [Ludeon Forums](https://ludeon.com/forums/).
+RimWorld is not well-documented. When RimWorld is downloaded through Steam on Windows, the default directory of the `RimWorld` folder is `C:\Program Files (x86)\Steam\steamapps\common\RimWorld`. For XML documentation, `RimWorld/Data` (and `RimWorld/Source` pre-1.7) will contain a variety of examples from the base game. For C# documentation, the relevant code can be decompiled (such as with [ILSpy](https://github.com/icsharpcode/ILSpy)) from `RimWorld/` (`RimWorld/RimWorld*_Data/Managed` pre-1.7) (especially `Assembly-CSharp.dll`). It is a good idea to find a mod that does something similar to what you're attempting to do and look at the code for that mod. There is a modding tutorial available on the [RimWorld Wiki](https://rimworldwiki.com/wiki/Modding). If you can't find something, ask for help on the [subreddit](https://www.reddit.com/r/RimWorld/) or [unofficial Discord server](https://discord.gg/rimworld).
+
+Other outdated resources:
+
+- [Ludeon Forums](https://ludeon.com/forums/) (now read-only).
+- [spdskatr's website](https://spdskatr.github.io/RWModdingResources/) (list of tutorials and resources).
+
+## C# References
+
+If you're writing a mod that includes C# code, you almost certainly will need to reference the `RimWorld` and `Verse` namespaces. You can accomplish this either by pointing at your local `Assembly-CSharp.dll` or the [`Krafs.Rimworld.Ref`](https://github.com/krafs/RimRef) NuGet package (which I'd recommend). You will probably also need to refer to Harmony via either your local `0Harmony.dll` or the [`Lib.Harmony`](https://www.nuget.org/packages/Lib.Harmony) NuGet package (also recommended).
 
 ## Harmony
 
-The following table lists the recommended [Harmony](https://github.com/pardeike/Harmony) version for each version of RimWorld. The column titled "Include Harmony" includes a value of "Yes" for versions of RimWorld that should include `0Harmony.dll` in their `Assemblies` folder, or "No" for versions of RimWorld that should depend on [the Harmony mod](https://github.com/pardeike/HarmonyRimWorld) instead.
+The following table lists the recommended [Harmony](https://github.com/pardeike/Harmony) version for each version of RimWorld. The column titled "Include Harmony" includes a value of "Yes" for versions of RimWorld that should include `0Harmony.dll` in their `Assemblies` folder, or "No" for versions of RimWorld that should depend on [the Harmony RimWorld mod](https://github.com/pardeike/HarmonyRimWorld) instead.
 
-| RimWorld | Harmony     | .NET Framework | Include Harmony |
-| -------- | ----------- | -------------- | --------------- |
-| 1.0      | 1.2.0.1     | 3.5            | Yes             |
-| 1.1      | 2.2.0.0[^1] | 4.7.2          | Yes             |
-| 1.2      | 2.2.2.0     | 4.7.2          | No              |
-| 1.3      | 2.2.2.0     | 4.7.2          | No              |
-| 1.4      | 2.2.2.0     | 4.7.2          | No              |
-| 1.5      | 2.3.3.0     | 4.7.2          | No              |
-| 1.6      | 2.4.1.0[^2] | 4.7.2          | No              |
+| RimWorld | Harmony     | .NET            | Include Harmony |
+| -------- | ----------- | --------------- | --------------- |
+| 1.0      | 1.2.0.1     | Framework 3.5   | Yes             |
+| 1.1      | 2.2.0.0[^1] | Framework 4.7.2 | Yes             |
+| 1.2      | 2.2.2.0     | Framework 4.7.2 | No              |
+| 1.3      | 2.2.2.0     | Framework 4.7.2 | No              |
+| 1.4      | 2.2.2.0     | Framework 4.7.2 | No              |
+| 1.5      | 2.3.3.0     | Framework 4.7.2 | No              |
+| 1.6      | 2.4.3.0     | Framework 4.7.2 | No              |
+| 1.7      | 3.0.0.0[^2] | 10.0.12         | No              |
 
 [^1]: There is conflicting information about which version of Harmony should be used with RimWorld version 1.1. [According to Harmony's developer](https://github.com/pardeike/HarmonyRimWorld/issues/39), you should use version 1.2.0.1, but it was standard practice at the time of its release to use version 2.x, so it's probably best to use version 2.2.2.0.
-[^2]: For the latest version of RimWorld, check [the RimWorld mod's GitHub repository](https://github.com/pardeike/HarmonyRimWorld) to ensure that the proper version is being used.
+
+[^2]: For the latest version of RimWorld, check [the Harmony RimWorld mod's GitHub repository](https://github.com/pardeike/HarmonyRimWorld) to ensure that the proper version is being used.

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <!--
 This file is used to provide additional information about the mod.
@@ -13,23 +13,23 @@ Documentation: https://github.com/fluffy-mods/ModManager/blob/master/ForModders.
 	<!-- The version of the mod. Follows the form "major.minor.build.revision". Must have 2-4 elements. -->
 	<version>1.0.0.0</version>
 
-	<!-- A list of identifiers of mods which the mod requires to function. -->
+	<!-- A list of identifiers of mods that the mod requires to function. -->
 	<dependencies>
 		<li>Harmony</li>
 	</dependencies>
 
-	<!-- Identifiers of mods which are incompatible with the mod. -->
+	<!-- Identifiers of mods that are incompatible with the mod. -->
 	<!-- <incompatibleWith/> -->
 
-	<!-- Identifiers of mods which should be loaded after the mod. -->
+	<!-- Identifiers of mods that should be loaded after the mod. -->
 	<!-- <loadBefore/> -->
 
-	<!-- Identifiers of mods which should be loaded before the mod. -->
+	<!-- Identifiers of mods that should be loaded before the mod. -->
 	<loadAfter>
 		<li>Harmony</li>
 	</loadAfter>
 
-	<!-- Identifiers of mods which are recommended to the user when using ModManager. -->
+	<!-- Identifiers of mods that are recommended to the user when using ModManager. -->
 	<!-- <suggests/> -->
 
 	<!-- Whether to show promotions for other mods by the author of the mod when using ModManager. -->
